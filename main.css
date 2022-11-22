@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: rgb(5, 5, 5);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(10, 230, 10);
+    color: rgb(10, 9, 9);
+    padding: 16px;
+    margin-bottom: 56px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    display: flex;
+    display: inline;
+    margin-left: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section img {
+    width: 500px;
+}
+
+
+
+section article {
+    display: flex
+}
+
+section article img {
+    margin-right: 40px;
+}
+
+section article h2 {
+    margin-bottom: 8px;
+}
+
+hr {
+    margin-bottom: 24px;
+    border: 1px solid rgb(10, 206, 26);
+}
+
+section ul li {
+    display: flex;
+}
+
+section ul li button {
+    padding: 4px;
+    background-color: rgb(10, 206, 26) ;
+    color: rgb(12, 10, 10);
+    margin-top: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+section ul {
+    align-items: center;
+}
+
+.items ul li h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.items ul li p {
+    margin-top: 0;
+}
+
+.items ul li h3 {
+    font-size: 20px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4,23.5%);
+    column-gap: 2%;
+}
+
+.items ul li img {
+    width: 100%;
+}
+
+.nossos-produtos h2 {
+    margin-top: 56px;
+    margin-bottom: 16px;
+}
+
+.nossos-produtos hr {
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    header li a {
+        font-size: 20px;
+    }
+    .sobre-a-loja article {
+        display: block;
+        width: 100%;
+    }
+
+    .sobre-a-loja p {
+        width: 100%;
+    }
+
+    .sobre-a-loja article img {
+        width: 100%;
+    }
+
+    
+    .items {
+        display: block;
+        margin: 16px;
+        
+    }
+
+    .items ul li button {
+        margin-bottom: 56px;
+    }
+
+}
+
+@media screen  and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+        width: 100%;
+    }
+    .sobre-a-loja article {
+        display: block;
+        width: 100%;
+    }
+
+    .sobre-a-loja article img {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+
+    .items {
+    grid-template-columns: repeat(2, 45%);
+    column-gap: 8%;
+    row-gap: 5%;
+}
+
+}
